@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tetris Game By liulian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>The Tetris Game By liulian</h1>
+    <div id="main-container">
+        <div id="game-container">
+            <canvas id="game-board" width="240" height="400"></canvas>
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+            <div id="message" style="display: none;">Line cleared!</div>
+            <div id="level-up-message" style="display: none;">Level Up!</div>
+            <div id="game-over" style="display: none;">Game Over</div>
+            <button id="restart-button">Restart Game</button>
+        </div>
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p><strong>PC Users:</strong></p>
+            <ul>
+                <li>Arrow Left: Move left</li>
+                <li>Arrow Right: Move right</li>
+                <li>Arrow Down: Drop faster</li>
+                <li>Arrow Up: Rotate</li>
+            </ul>
+            <p><strong>Phone Users:</strong></p>
+            <ul>
+                <li>Swipe Left: Move left</li>
+                <li>Swipe Right: Move right</li>
+                <li>Swipe Down: Drop faster</li>
+                <li>Swipe Up: Rotate</li>
+                <li>Tap: Rotate</li>
+            </ul>
+        </div>
+        <!-- Mobile Controls -->
+        <div id="mobile-controls">
+            <div class="keypad-row">
+                <div class="keypad-spacer"></div>
+                <button id="up-key" class="key-button">↑</button>
+                <div class="keypad-spacer"></div>
+            </div>
+            <div class="keypad-row">
+                <button id="left-key" class="key-button">←</button>
+                <button id="down-key" class="key-button">↓</button>
+                <button id="right-key" class="key-button">→</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
